@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Multiple Horse Theory: an unnecessarily rigorous interactive investigation into whether there may be more than one horse on Earth." />
+  <meta name="theme-color" content="#f2efe7" />
+  <title>Multiple Horse Theory</title>
+  <link rel="icon" href="assets/horse-mark.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Multiple Horse Theory home">
+      <img src="assets/horse-mark.svg" alt="" />
+      <span>MHT Institute</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#evidence">Evidence</a>
+      <a href="#theories">Counter theories</a>
+      <a href="#peer-review">Peer review</a>
+      <a href="#model">Your model</a>
+    </nav>
+    <button class="icon-btn" id="scienceToggle" aria-pressed="false" title="Toggle actual science annotations">ACTUAL SCIENCE: OFF</button>
+  </header>
+
+  <main id="top">
+    <section class="hero section-dark" aria-labelledby="heroTitle">
+      <div class="hero-sky" aria-hidden="true">
+        <div class="hero-horse horse-one">🐎</div>
+        <div class="hero-horse horse-two">🐎</div>
+      </div>
+      <div class="hero-content wrap">
+        <p class="eyebrow">Equine Ontology Report · Vol. 01</p>
+        <h1 id="heroTitle">Multiple<br />Horse Theory</h1>
+        <p class="hero-dek">The controversial hypothesis that there is more than one horse on Earth—and that each horse you see may, in fact, be a different horse.</p>
+        <div class="hero-readout" aria-live="polite">
+          <span>Current estimate</span>
+          <strong id="heroCount">1 ?</strong>
+        </div>
+        <a class="button button-light" href="#theory">Begin investigation <span>↓</span></a>
+      </div>
+      <div class="status-strip">
+        <span><i></i> Status: controversial</span>
+        <span><i></i> Evidence: developing</span>
+        <span><i></i> Horses confirmed: ≥1</span>
+      </div>
+    </section>
+
+    <section id="theory" class="section paper-section theory-intro">
+      <div class="wrap narrow">
+        <p class="eyebrow">The proposition</p>
+        <h2>For centuries, mankind has operated under one basic assumption:</h2>
+        <div class="proposition-stage">
+          <div class="specimen specimen-large" aria-label="one horse">🐎</div>
+          <p class="display-statement">There is a horse.</p>
+        </div>
+        <div class="divider"></div>
+        <p class="lead centered">Multiple Horse Theory asks a dangerous question:</p>
+        <div class="proposition-stage proposition-two">
+          <div class="specimen-row" aria-label="two horses">
+            <div class="specimen">🐎</div>
+            <div class="specimen specimen-ghost">🐎</div>
+          </div>
+          <p class="display-statement">What if there is <em>another</em> horse?</p>
+        </div>
+        <aside class="formal-card">
+          <div class="formal-card-head"><span>MHT-01</span><span>Working hypothesis</span></div>
+          <h3>Multiple Horse Hypothesis</h3>
+          <p>Given two observations of apparently equine objects, those observations may represent two separate horses rather than repeated observations of the same horse.</p>
+          <div class="formula">PROPOSED HORSE COUNT &nbsp; H &gt; 1</div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="evidence" class="section evidence-section">
+      <div class="wrap">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow">Experiment 01</p>
+            <h2>The alleged “herd”</h2>
+          </div>
+          <p>A foundational challenge to the Single Horse Model: what happens when several horses appear to occupy the same place at the same time?</p>
+        </div>
+
+        <div class="quote-card featured-quote">
+          <blockquote>“So you think that time I saw a group of horses together it was multiple individual horses &amp; not the same horse multiple times in the same place? Idk, this theory seems pretty wild.”</blockquote>
+          <footer><span>-_-Orange</span><strong>63 peer endorsements</strong></footer>
+        </div>
+
+        <div class="herd-lab lab-card">
+          <div class="lab-topbar"><span>Field Image Reconstruction</span><span>Case H-06</span></div>
+          <div class="herd-stage" id="herdStage" aria-label="A diagram of six apparent horses">
+            <button class="herd-horse h1" data-label="A" aria-label="Horse A">🐎<span>A</span></button>
+            <button class="herd-horse h2" data-label="B" aria-label="Horse B">🐎<span>B</span></button>
+            <button class="herd-horse h3" data-label="C" aria-label="Horse C">🐎<span>C</span></button>
+            <button class="herd-horse h4" data-label="D" aria-label="Horse D">🐎<span>D</span></button>
+            <button class="herd-horse h5" data-label="E" aria-label="Horse E">🐎<span>E</span></button>
+            <button class="herd-horse h6" data-label="F" aria-label="Horse F">🐎<span>F</span></button>
+            <div class="field-line"></div>
+          </div>
+          <div class="lab-question">
+            <h3>How many horses are in this image?</h3>
+            <div class="choice-row" id="herdChoices" role="group" aria-label="Choose a horse count">
+              <button data-count="1">1</button><button data-count="2">2</button><button data-count="3">3</button><button data-count="4">4</button><button data-count="5">5</button><button data-count="6">6+</button><button data-count="?">Insufficient evidence</button>
+            </div>
+            <p class="lab-response" id="herdResponse">No answer recorded.</p>
+          </div>
+          <div class="herd-challenge hidden" id="herdChallenge">
+            <button class="button" id="sameHorseBtn">Are you sure these aren't the same horse?</button>
+          </div>
+          <div class="model-compare hidden" id="modelCompare">
+            <article>
+              <span class="model-tag">Model A</span>
+              <h4>Multiple Horse Explanation</h4>
+              <p>Six horses were standing in approximately the same location.</p>
+              <dl><div><dt>Horses required</dt><dd>6</dd></div><div><dt>Physics violations</dt><dd>0</dd></div></dl>
+            </article>
+            <article>
+              <span class="model-tag">Model B</span>
+              <h4>Single Horse Explanation</h4>
+              <p>One horse occupied six spatial positions faster than the observer could resolve.</p>
+              <dl><div><dt>Horses required</dt><dd>1</dd></div><div><dt>Spacetime concerns</dt><dd>Several</dd></div></dl>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section mirror-section section-dark">
+      <div class="wrap">
+        <div class="section-heading split-heading">
+          <div><p class="eyebrow">Experiment 02</p><h2>The Mirror Hypothesis</h2></div>
+          <p>One horse. Lots of mirrors. An aggressively economical answer to the apparent population problem.</p>
+        </div>
+        <div class="quote-card quote-dark">
+          <blockquote>“One horse, lots of mirrors. Its the simplest explanation given we know that there is only one horse.”</blockquote>
+          <footer><span>created4this</span><strong>36 peer endorsements</strong></footer>
+        </div>
+        <div class="mirror-grid">
+          <div class="mirror-lab">
+            <div class="mirror-room" id="mirrorRoom">
+              <div class="central-horse">🐎</div>
+              <div class="reflection r1">🐎</div><div class="reflection r2">🐎</div><div class="reflection r3">🐎</div><div class="reflection r4">🐎</div><div class="reflection r5">🐎</div><div class="reflection r6">🐎</div><div class="mirror-plane p1"></div><div class="mirror-plane p2"></div><div class="mirror-plane p3"></div><div class="mirror-plane p4"></div><div class="mirror-plane p5"></div><div class="mirror-plane p6"></div>
+            </div>
+            <div class="mirror-controls">
+              <button id="mirrorMinus" aria-label="Remove a mirror">− mirror</button>
+              <strong><span id="mirrorCount">2</span> mirrors deployed</strong>
+              <button id="mirrorPlus" aria-label="Add a mirror">+ mirror</button>
+            </div>
+          </div>
+          <aside class="metrics-panel">
+            <p class="eyebrow">Occam compliance</p>
+            <div class="metric"><span>Horses observed</span><strong id="observedHorses">3</strong></div>
+            <div class="metric"><span>Actual horses required</span><strong>1</strong></div>
+            <div class="metric"><span>Unexplained mirror infrastructure</span><strong id="mirrorInfra">2</strong></div>
+            <div class="credibility"><span>Model simplicity</span><div><i id="simplicityBar"></i></div><b id="simplicityText">Dubious</b></div>
+            <div class="science-note" data-science><strong>Actual science:</strong> Occam’s razor is commonly framed as avoiding unnecessary assumptions or entities. Whether mirrors are “simpler” than horses is left to the committee.</div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section sightings-section">
+      <div class="wrap">
+        <div class="section-heading split-heading">
+          <div><p class="eyebrow">Evidence registry</p><h2>Global Horse Sightings Database</h2></div>
+          <p>Classify each observation. Your decisions will be used to estimate your personal horse population.</p>
+        </div>
+        <div class="sighting-layout">
+          <div class="sightings-list" id="sightingsList"></div>
+          <aside class="sighting-summary sticky-card">
+            <p class="eyebrow">Your working model</p>
+            <div class="big-number" id="personalHorseCount">1.0</div>
+            <p>estimated horses</p>
+            <div class="summary-lines"><span><i></i>New-horse calls <b id="newCalls">0</b></span><span><i></i>Same-horse calls <b id="sameCalls">0</b></span><span><i></i>Unresolved <b id="unresolvedCalls">6</b></span></div>
+            <small>Fractional horses are tolerated pending review by the Half-Horse Working Group.</small>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section color-section">
+      <div class="wrap narrow">
+        <p class="eyebrow">Exhibit B</p>
+        <h2>Different colors. Same day.</h2>
+        <div class="quote-card">
+          <blockquote>“I've seen horses that are different colors, and on the same day so no drying time in between sightings. ∴ I would tend to believe the theory.”</blockquote>
+          <footer><span>KeithMyArthe</span><strong>8 peer endorsements</strong></footer>
+        </div>
+        <div class="coat-stage">
+          <div class="coat-horse chestnut">🐎<span>Chestnut</span></div>
+          <div class="coat-horse bay">🐎<span>Bay</span></div>
+          <div class="coat-horse black">🐎<span>Black</span></div>
+        </div>
+        <div class="explanation-picker">
+          <p>Possible explanations:</p>
+          <div class="chip-row" id="colorExplanations">
+            <button>Multiple horses</button><button>Rapid repainting</button><button>Lighting</button><button>Seasonal skins</button><button>Zebras with a skin condition</button>
+          </div>
+          <div class="picked-explanation" id="pickedExplanation">Select an explanation for committee review.</div>
+        </div>
+        <div class="science-note" data-science><strong>Actual science:</strong> UC Davis Veterinary Genetics Laboratory describes chestnut, bay, and black as base horse coat colors influenced by MC1R and ASIP genes.</div>
+      </div>
+    </section>
+
+    <section class="section math-section section-dark">
+      <div class="wrap">
+        <div class="section-heading split-heading">
+          <div><p class="eyebrow">Formal objection</p><h2>Mathematics says no.</h2></div>
+          <p>A proof by induction appears to establish that every horse is the same horse. It is elegant, concise, and—regrettably—broken.</p>
+        </div>
+        <div class="proof-card">
+          <div class="proof-head"><span>Theorem MHT-Δ</span><b>ALL HORSES ARE THE SAME HORSE</b></div>
+          <div class="proof-steps" id="proofSteps">
+            <div class="proof-step active" data-step="0"><span>01</span><p>A group containing one horse contains only the same horse. Trivially true.</p><div class="proof-horses">🐎</div></div>
+            <div class="proof-step" data-step="1"><span>02</span><p>Assume any group of <em>n</em> horses is actually one horse. Consider <em>n + 1</em>.</p><div class="proof-horses">🐎 🐎 🐎 🐎</div></div>
+            <div class="proof-step" data-step="2"><span>03</span><p>Remove the last. The remaining <em>n</em> are “the same.” Remove the first. The other <em>n</em> are also “the same.”</p><div class="proof-horses muted">🐎 🐎 🐎 <s>🐎</s><br><s>🐎</s> 🐎 🐎 🐎</div></div>
+            <div class="proof-step" data-step="3"><span>04</span><p>Therefore all horses are the same horse.</p><div class="qed">Q.E.D.</div></div>
+          </div>
+          <div class="proof-controls"><button id="proofNext" class="button button-light">Advance proof</button><button id="checkMath" class="text-button hidden">Check the math →</button></div>
+          <div class="proof-error hidden" id="proofError">
+            <div class="error-badge">ERROR FOUND</div>
+            <h3>The n = 1 → n = 2 transition has no overlap.</h3>
+            <div class="overlap-demo"><div>🐎<small>Group A</small></div><strong>∩ = 0 horses</strong><div>🐎<small>Group B</small></div></div>
+            <p>The two one-horse subsets share no horse, so nothing connects their identities. The induction step fails exactly where the second horse arrives.</p>
+            <div class="science-note visible-science"><strong>Actual math:</strong> This is a classic false-induction puzzle often phrased as “all horses are the same color.” The flaw occurs at the 1-to-2 case.</div>
+          </div>
+        </div>
+        <div class="tiny-quote">“Ah yes, the Canter Set.” <span>— exkingzog</span></div>
+      </div>
+    </section>
+
+    <section id="theories" class="section theory-lab-section">
+      <div class="wrap">
+        <div class="section-heading split-heading">
+          <div><p class="eyebrow">Competing frameworks</p><h2>Counter-Theory Laboratory</h2></div>
+          <p>Multiple Horse Theory is not the only model. Select an alternative and inspect its explanatory burden.</p>
+        </div>
+        <div class="theory-lab">
+          <div class="theory-tabs" id="theoryTabs" role="tablist"></div>
+          <div class="theory-display" id="theoryDisplay" role="tabpanel"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section identity-section">
+      <div class="wrap narrow">
+        <p class="eyebrow">Experiment 03</p>
+        <h2>The Horse Identity Test</h2>
+        <p class="lead">Can you tell whether two sightings depict the same horse? More importantly: can anyone?</p>
+        <div class="identity-card">
+          <div class="identity-progress"><span id="identityStep">Pair 1 of 5</span><div><i id="identityProgress"></i></div></div>
+          <div class="identity-pair" id="identityPair"></div>
+          <h3>Are these the same horse?</h3>
+          <div class="choice-row identity-choices"><button data-answer="same">Yes</button><button data-answer="different">No</button><button data-answer="unknown">Impossible to know</button></div>
+          <div class="identity-result hidden" id="identityResult"></div>
+        </div>
+        <div class="science-note" data-science><strong>Actual science:</strong> Research published in Scientific Reports found that horses could discriminate a familiar human from an unfamiliar human using photographs of faces. The horses may, therefore, be judging our identity work as well.</div>
+      </div>
+    </section>
+
+    <section id="peer-review" class="section peer-section section-dark">
+      <div class="wrap">
+        <div class="section-heading split-heading">
+          <div><p class="eyebrow">External assessment</p><h2>Peer Review</h2></div>
+          <p>Selected comments from the original r/shittyaskscience discussion, classified by methodological contribution.</p>
+        </div>
+        <div class="filter-row" id="peerFilters" role="group" aria-label="Filter peer reviews">
+          <button class="active" data-filter="all">All</button><button data-filter="support">Pro-multiple</button><button data-filter="single">One horse</button><button data-filter="alt">Alternative models</button><button data-filter="philosophy">Philosophy</button><button data-filter="unhelpful">Not helpful</button>
+        </div>
+        <div class="peer-grid" id="peerGrid"></div>
+      </div>
+    </section>
+
+    <section id="model" class="section model-builder-section">
+      <div class="wrap">
+        <div class="section-heading split-heading">
+          <div><p class="eyebrow">Personal framework</p><h2>Build Your Own Horse Model</h2></div>
+          <p>Adjust the assumptions below. The Institute will classify your equine ontological position using methods of questionable validity.</p>
+        </div>
+        <div class="builder-grid">
+          <form class="builder-controls" id="modelForm">
+            <label class="range-block"><span>How many horses exist?</span><strong id="horseRangeValue">8</strong><input id="horseRange" type="range" min="0" max="100" value="45" /></label>
+            <div class="toggle-line"><span>Horses can teleport</span><label class="switch"><input id="teleport" type="checkbox"><i></i></label></div>
+            <div class="toggle-line"><span>Mirrors are involved</span><label class="switch"><input id="mirrors" type="checkbox"><i></i></label></div>
+            <div class="toggle-line"><span>Horses possess depth</span><label class="switch"><input id="depth" type="checkbox" checked><i></i></label></div>
+            <div class="toggle-line"><span>Plato was substantially correct</span><label class="switch"><input id="plato" type="checkbox"><i></i></label></div>
+            <div class="toggle-line"><span>Big Chariot involvement</span><label class="switch"><input id="chariot" type="checkbox"><i></i></label></div>
+            <div class="toggle-line"><span>Swamp gas</span><label class="switch"><input id="swamp" type="checkbox"><i></i></label></div>
+          </form>
+          <aside class="model-certificate" id="modelCertificate">
+            <div class="certificate-seal">MHT</div>
+            <p class="eyebrow">Your equine ontological position</p>
+            <h3 id="modelName">Moderate Multiplicist</h3>
+            <p id="modelDescription">You accept multiple horses while remaining appropriately nervous about the exact number.</p>
+            <div class="certificate-stats"><div><span>Horse estimate</span><strong id="certHorseCount">8</strong></div><div><span>Physics burden</span><strong id="physicsBurden">Low</strong></div><div><span>Platos required</span><strong id="platosRequired">0.0</strong></div></div>
+            <div class="credibility certificate-cred"><span>Scientific credibility</span><div><i id="credibilityBar"></i></div><b id="credibilityText">72%</b></div>
+            <button class="button" type="button" id="copyModel">Copy my horse theory</button>
+            <p class="copy-status" id="copyStatus" aria-live="polite"></p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section final-section section-dark">
+      <div class="wrap narrow centered">
+        <p class="eyebrow">Provisional conclusion</p>
+        <h2>So… are there multiple horses?</h2>
+        <div class="final-herd" id="finalHerd" aria-hidden="true"></div>
+        <p class="final-label">Evidence strongly suggests:</p>
+        <div class="final-verdict">There may be<br />more than one horse.</div>
+        <div class="final-counter">Observed during this session: <strong id="finalCounter">1</strong> horse<span id="pluralS"></span></div>
+        <button class="button button-light" id="runVerdict">Run final observation</button>
+        <small>Research remains ongoing.</small>
+      </div>
+    </section>
+
+    <section class="section sources-section">
+      <div class="wrap narrow">
+        <p class="eyebrow">Notes &amp; sources</p>
+        <h2>A tiny amount of actual science survived.</h2>
+        <p>The page is satire. The Reddit comments are used as source material for the fictional theories; the research links below support the real scientific and philosophical asides.</p>
+        <ol class="sources-list">
+          <li><a href="https://math.hmc.edu/funfacts/all-horses-are-the-same-color/" target="_blank" rel="noreferrer">Harvey Mudd Math Fun Facts — “All Horses are the Same Color”</a></li>
+          <li><a href="https://vgl.ucdavis.edu/resources/horse-coat-color" target="_blank" rel="noreferrer">UC Davis Veterinary Genetics Laboratory — Equine Coat Color Genetics</a></li>
+          <li><a href="https://www.nature.com/articles/s41598-020-62940-w" target="_blank" rel="noreferrer">Scientific Reports — Female horses identify a familiar human from a photograph</a></li>
+          <li><a href="https://plato.stanford.edu/entries/plato-myths/" target="_blank" rel="noreferrer">Stanford Encyclopedia of Philosophy — Plato’s Myths / Allegory of the Cave</a></li>
+          <li><a href="https://www.reddit.com/r/shittyaskscience/comments/1v7y6n4/" target="_blank" rel="noreferrer">Original r/shittyaskscience discussion</a></li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div><img src="assets/horse-mark.svg" alt="" /><strong>MHT Institute</strong><p>Advancing equine plurality through unnecessary rigor.</p></div>
+      <div><span>Document</span><b>MHT-2026-001</b></div>
+      <div><span>Classification</span><b>Horse-related</b></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

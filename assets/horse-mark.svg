@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="MHT horse mark">
+  <rect width="64" height="64" rx="8" fill="#172019"/>
+  <path d="M13 44c6-2 10-8 12-15l-5-8 7 3 5-9 5 10c8 2 13 8 14 18h-9c-1-4-4-7-8-8l-2 11h-8l1-11c-2 6-6 10-12 12z" fill="#f1eee5"/>
+  <circle cx="39" cy="27" r="1.7" fill="#172019"/>
+</svg>
