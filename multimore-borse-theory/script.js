@@ -20,6 +20,7 @@ function makeVelocity() {
 function createHorse(x, y, vx, vy) {
   const element = document.createElement("div");
   element.className = "horse";
+  element.style.visibility = "hidden";
 
   const image = document.createElement("img");
   image.src = "horse.svg";
@@ -80,12 +81,14 @@ function duplicateHorse(source, hitX, hitY) {
   clone.y = Math.min(Math.max(0, clone.y), bounds.height - clone.height);
   clone.collisionLock = 0.12;
   clone.angularVelocity = -source.angularVelocity;
+  placeHorse(clone);
 }
 
 function placeHorse(horse) {
   const facing = horse.vx < 0 ? -1 : 1;
   horse.element.style.transform =
     `translate3d(${horse.x}px, ${horse.y}px, 0) rotate(${horse.rotation}rad) scaleX(${facing})`;
+  horse.element.style.visibility = "visible";
 }
 
 function moveHorse(horse, delta) {
