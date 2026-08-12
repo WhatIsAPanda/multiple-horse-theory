@@ -1,6 +1,6 @@
 const field = document.querySelector("#field");
 const horses = [];
-const HORSE_LIMIT = 128;
+const HORSE_LIMIT = 1024;
 const MIN_SPEED = 105;
 const MAX_SPEED = 175;
 const SPLIT_ANGLE = Math.PI / 12;
